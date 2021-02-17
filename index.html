@@ -5,13 +5,44 @@
     <title>Playground - JavaScript 101</title>
     <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container text-center">
+
+      <select class="select2" name="country">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+        <option value="AL">New York</option>
+        <option value="WY">Florida</option>
+        <option value="AL">Kentucky</option>
+        <option value="WY">Nevada</option>
+        <option value="AL">Texas</option>
+        <option value="WY">New Mexico</option>
+        <option value="AL">Georgia</option>
+        <option value="WY">California</option>
+        <option value="AL">Iowa</option>
+        <option value="WY">Washington</option>
+        <option value="AL">Alaska</option>
+        <option value="WY">Hawaii</option>
+        <option value="AL">Arizona</option>
+        <option value="WY">Massachusets</option>
+        <option value="AL">Minessota</option>
+        <option value="WY">Pensilvannia</option>
+        <option value="AL">North Carolina</option>
+        <option value="WY">South Carolina</option>
+      </select>
+
+      <textarea class="form-control" id="editor" rows="4"></textarea>
+      <div id="preview"></div>
+
+
       <form action="" class="search-form" id="search">
-        <input type="text" id="search-input">
+        <input type="text" id="search-input" placeholder="Your favorite movie??">
       </form>
+
+      <h1>Movieland</h1>
       <ul id="movies" class="list-inline"></ul>
 
     </div>
